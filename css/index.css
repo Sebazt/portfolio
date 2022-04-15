@@ -115,6 +115,12 @@ img {
   height: auto;
 }
 
+ol, ul {
+    padding-left: 0rem !important;
+    
+}
+
+
 /* ======================THEME ======================== */
 
 .change-theme {
@@ -198,6 +204,9 @@ body.light-theme {
 /*  css class reusable */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
    width: auto;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    
 }
 
 .container {
@@ -205,6 +214,7 @@ body.light-theme {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 
 .grid {
   display: grid;
@@ -270,6 +280,7 @@ body.light-theme {
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
   width: 90%;
+  height: 12vh !important;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
