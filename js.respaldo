@@ -79,10 +79,10 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
       slidesPerView: 2,
       spaceBetween: 48,
     },
-    /*  1024: {
-       slidesPerView: 5,
-       spaceBetween: 50,
-     }, */
+   /*  1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    }, */
   },
 });
 
@@ -144,15 +144,15 @@ themeButton.addEventListener('click', () => {
 /* -------------scrolll reveal -------------------*/
 
 const sr = ScrollReveal({
-  origin: 'top',
+  origin:'top',
   distance: '60px',
   duration: 2500,
   delay: 400,
-  /* reset: */
+  /* reset: */ 
 })
 
 sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, { delay: 700 })
+sr.reveal(`.home__handle`, {delay:700})
 sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
 
 
@@ -161,11 +161,11 @@ sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
 
 console.log(skillsArray)
 
-function mostrarTec() {
+function mostrarTec(){
 
-  let = html = ""
+  let = html=""
 
-  skillsArray.map(tecnologia => {
+  skillsArray.map(tecnologia =>{
     html += `
     
       
@@ -186,18 +186,18 @@ addEventListener("DOMContentLoaded", () => {
 
   const obtenerPix = () => document.documentElement.scrollTop || document.body.scrollTop;
   const irArriba = () => {
-    if (obtenerPix() > 0) {
-
-      scrollTo(0, 0)
+    if(obtenerPix() > 0){
+      
+      scrollTo(0,0)
     }
   }
 
-  const indicadorScroll = () => {
-    if (obtenerPix() > 1000) {
-      botonUp.className = "mostrar"
+  const indicadorScroll= ()=>{
+    if(obtenerPix() > 1000){
+      botonUp.className="mostrar"
     }
-    else {
-      botonUp.className = "ocultar"
+    else{
+      botonUp.className="ocultar"
     }
   }
 
