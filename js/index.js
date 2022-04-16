@@ -1,3 +1,4 @@
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
   const header = document.getElementById('header')
@@ -177,3 +178,30 @@ function mostrarTec(){
 
 }
 mostrarTec()
+
+
+/* ==============funcion para el boton de scroll ============= */
+addEventListener("DOMContentLoaded", () => {
+  const botonUp = document.querySelector("#boton__arriba")
+
+  const obtenerPix = () => document.documentElement.scrollTop || document.body.scrollTop;
+  const irArriba = () => {
+    if(obtenerPix() > 0){
+      
+      scrollTo(0,0)
+    }
+  }
+
+  const indicadorScroll= ()=>{
+    if(obtenerPix() > 1000){
+      botonUp.className="mostrar"
+    }
+    else{
+      botonUp.className="ocultar"
+    }
+  }
+
+  botonUp.addEventListener("click", irArriba)
+  window.addEventListener("scroll", indicadorScroll)
+
+})

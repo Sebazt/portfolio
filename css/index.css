@@ -905,6 +905,63 @@ body.light-theme {
   cursor: pointer;
 }
 
+
+.numero{
+ 
+  align-items: center;
+  text-align: center;
+  font-size: 1rem !important;
+  color: var(--body-color);
+}
+
+/* =======================SCROLLL UP ========================== */
+#boton__arriba{
+  position: fixed;
+  z-index: 1000;
+  right: 25px;
+  bottom: 25px;
+  background-color: var(--first-color);
+  width: 28px;
+  height: 28px;
+  color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: all .2s;
+}
+
+#boton__arriba:hover{
+  cursor: pointer;
+}
+
+.indicador__scroll{
+  height: 100%;
+  width: 0;
+  background-color: var(--first-color);
+}
+
+.ocultar{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mostrar{
+  opacity: 1;
+  visibility: visible;
+}
+
+.flecha{
+  font-size: 1.2em;
+}
+
+.flecha:hover{
+  transform: translateY(-0.15rem);  
+}
+
+
+
 /* ============================== BREAKPOINTS ================================= */
 /* for small */
 @media screen and (max-width: 320px) {
@@ -1027,6 +1084,10 @@ body.light-theme {
   .work__img {
     width: 85%;
     
+  }
+
+  #boton__arriba{
+    display: none;
   }
 }
 
