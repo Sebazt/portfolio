@@ -361,10 +361,11 @@ body.light-theme {
   height: 100 !important;
   border-radius: 10rem 10rem;
   object-fit: cover !important;
+  filter: brightness(0.8);
 }
 
 .home__img:hover {
-  filter: brightness(0.8);
+  filter: brightness(1);
 }
 
 .home__handle {
@@ -475,10 +476,14 @@ body.light-theme {
 
 .about__img {
   width: 220px;
-
+ filter: brightness(0.8);
   /*  height: 550px; */
   border-radius: 1.5rem;
   justify-self: center;
+}
+
+.about__img:hover{
+  filter: brightness(1);
 }
 
 .about__data {
@@ -554,16 +559,24 @@ body.light-theme {
 }
 
 .skills,
-.bx-code-alt {
+.bx-code {
   font-size: 1rem;
   color: var(--first-color);
 }
 
+.gorrito{
+  color: var(--first-color);
+  font-size: 1.2rem;
+}
 
+.gorrito:hover{
+  transform: translateX(0.25rem);
+}
 
 .skills__name,
-.bx-code-alt:hover{
+.bx-code:hover{
   cursor: pointer;
+  transform: translateY(-0.10rem);
 }
 
 
@@ -722,17 +735,27 @@ body.light-theme {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
+  height: 55vh;
 }
 
 .work__img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
 }
 
 .work__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: 0.25rem;
+}
+
+.work__container-buttons{
+  
+  display: flex;
+  justify-content: space-around;
 }
 
 .work__button {
@@ -745,7 +768,7 @@ body.light-theme {
 }
 
 .work__button:hover .work__icon {
-  transform: translateY(0.25rem);
+  transform: translateX(0.25rem);
 }
 
 .work__icon {
@@ -874,10 +897,11 @@ body.light-theme {
   width: 80px;
   height: 70px;
   margin: 1.5rem 1rem;
+  filter: brightness(0.8);
 }
 
 .img__carta:hover {
-  filter: brightness(0.8);
+  filter: brightness(1);
   cursor: pointer;
 }
 
@@ -931,6 +955,7 @@ body.light-theme {
   .work__filters {
     column-gap: 0.25rem;
   }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -983,6 +1008,25 @@ body.light-theme {
 
   .work__img {
     width: 295px;
+    
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .work__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__button{
+    margin: 0 1rem;
+  }
+
+  .work__img {
+    width: 85%;
+    
   }
 }
 

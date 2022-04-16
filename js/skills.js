@@ -43,12 +43,12 @@ var skillsArray =
   },
   {
     "id": 9,
-    "image": "https://gcollazo.github.io/mongodbapp/assets/img/icon.png",
+    "image": "https://www.servicepilot.com/images/integration/mongodb.webp",
     "name": "MongoDB"
   },
   {
     "id": 10,
-    "image": "../assets/express.png",
+    "image": "https://nashvillesoftwareschool.com/images/technologies/express.png",
     "name": "Express"
   },
   {
@@ -58,12 +58,12 @@ var skillsArray =
   },
   {
     "id": 12,
-    "image": "../assets/reactNative.png",
+    "image": "https://raw.githubusercontent.com/kristerkari/react-native-svg-transformer/master/images/react-native-logo.png",
     "name": "React-Native"
   },
   {
     "id": 13,
-    "image": "../assets/postman.png",
+    "image": "https://webintegral.com.co/wp-content/uploads/2018/05/postman-icon.png  ",
     "name": "Postman"
   },
   {
