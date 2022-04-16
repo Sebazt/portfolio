@@ -1,4 +1,4 @@
-var skills =
+var skillsArray =
 
 [
   {
@@ -43,7 +43,7 @@ var skills =
   },
   {
     "id": 9,
-    "image": "../assets/mongodb.png",
+    "image": "https://gcollazo.github.io/mongodbapp/assets/img/icon.png",
     "name": "MongoDB"
   },
   {
@@ -70,5 +70,10 @@ var skills =
     "id": 14,
     "image": "../assets/insomia.png",
     "name": "Insomia"
+  },
+  {
+    "id": 15,
+    "image": "https://cdn2.downdetector.com/static/uploads/logo/figma2.png",
+    "name": "Figma"
   }
 ]

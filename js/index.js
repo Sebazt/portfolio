@@ -158,3 +158,22 @@ sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
 /* ================ array SKIll ========================== */
 
 
+console.log(skillsArray)
+
+function mostrarTec(){
+
+  let = html=""
+
+  skillsArray.map(tecnologia =>{
+    html += `
+    
+      
+        <img class="img__carta" src="${tecnologia.image}">
+     
+    
+    `
+  })
+  document.querySelector("#mainCards").innerHTML = html
+
+}
+mostrarTec()

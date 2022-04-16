@@ -365,7 +365,6 @@ body.light-theme {
 
 .home__img:hover {
   filter: brightness(0.8);
-  
 }
 
 .home__handle {
@@ -476,9 +475,8 @@ body.light-theme {
 
 .about__img {
   width: 220px;
-  
- 
- /*  height: 550px; */
+
+  /*  height: 550px; */
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -556,16 +554,26 @@ body.light-theme {
 }
 
 .skills,
-.bxs-badge-check {
+.bx-code-alt {
   font-size: 1rem;
   color: var(--first-color);
 }
+
+
+
+.skills__name,
+.bx-code-alt:hover{
+  cursor: pointer;
+}
+
+
 
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
 }
+
 
 .skills__lever {
   font-size: var(--tiny-font-size);
@@ -574,6 +582,12 @@ body.light-theme {
 /* -----------------------------------------------services------------------------------------------ */
 
 .services__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.cards__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;
@@ -619,7 +633,7 @@ body.light-theme {
   place-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: 2.5s;
+  transition: 1s;
   z-index: var(--z-modal);
 }
 
@@ -845,6 +859,28 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
 
+/* ========================CARDS TECNOLOGIES ================== */
+
+#mainCards {
+  display: flex;
+  width: 70%;
+  min-height: 20vh;
+  margin: 2rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img__carta {
+  width: 80px;
+  height: 70px;
+  margin: 1.5rem 1rem;
+}
+
+.img__carta:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
 /* ============================== BREAKPOINTS ================================= */
 /* for small */
 @media screen and (max-width: 320px) {
@@ -879,6 +915,11 @@ body.light-theme {
   }
 
   .services__container {
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+
+  .cards__container {
     grid-template-columns: 145px;
     justify-content: center;
   }
@@ -918,6 +959,11 @@ body.light-theme {
   }
 
   .services__container {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+
+  .cards__container {
     grid-template-columns: repeat(2, 160px);
     justify-content: center;
   }
@@ -999,7 +1045,7 @@ body.light-theme {
 
   .about__img {
     width: 350px;
-     height: 100%;
+    height: 100%;
   }
 
   .about__data {
@@ -1027,6 +1073,10 @@ body.light-theme {
 
   .services__container {
     grid-template-columns: repeat(3, 192px);
+  }
+
+  .cards__container {
+    grid-template-columns: repeat(12, 50px);
   }
 
   .services__card {
