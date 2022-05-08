@@ -908,10 +908,12 @@ body.light-theme {
   height: 70px;
   margin: 1.5rem 1rem;
   filter: brightness(0.8);
+  transition: .5s ease-in-out;
 }
 
 .img__carta:hover {
   filter: brightness(1);
+  transform: rotate(360deg);
   cursor: pointer;
 }
 
