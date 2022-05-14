@@ -1042,6 +1042,8 @@ body.light-theme {
 
   .about__description {
     padding: 0 5rem;
+    text-align: justify;
+    
   }
 
   .skills__container {
