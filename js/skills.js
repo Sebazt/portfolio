@@ -17,9 +17,19 @@ var skillsArray =
       "name": "JavaScript"
     },
     {
+      "id": 16,
+      "image": "https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png",
+      "name": "Typescript"
+    },
+    {
       "id": 4,
       "image": "../assets/bootstrap.png",
       "name": "Bootstrap"
+    },
+    {
+      "id": 15,
+      "image": "https://angular.io/assets/images/logos/angular/angular.png",
+      "name": "Angular"
     },
     {
       "id": 5,
@@ -40,6 +50,11 @@ var skillsArray =
       "id": 8,
       "image": "../assets/node.png",
       "name": "Node.js"
+    },
+    {
+      "id": 20,
+      "image": "https://seeklogo.com/images/N/nestjs-logo-09342F76C0-seeklogo.com.png",
+      "name": "NestJs"
     },
     {
       "id": 9,
@@ -72,18 +87,18 @@ var skillsArray =
       "name": "Insomia"
     },
     {
-      "id": 15,
-      "image": "https://cdn2.downdetector.com/static/uploads/logo/figma2.png",
-      "name": "Figma"
-    },
-    {
-      "id": 16,
-      "image": "https://cdn-icons-png.flaticon.com/512/919/919832.png",
-      "name": "Typescript"
-    },
-    {
       "id": 17,
-      "image": "https://www.zencos.com/wp-content/uploads/2021/11/aws-logo.png",
-      "name": "AWS"
+      "image": "https://cdn.iconscout.com/icon/free/png-256/redis-4-1175103.png",
+      "name": "Redis"
+    },
+    {
+      "id": 18,
+      "image": "https://www.sensedeep.com/images/cloudwatch.png",
+      "name": "CloudWatch"
+    },
+    {
+      "id": 19,
+      "image": "https://s1.o7planning.com/en/13193/images/64422795.png",
+      "name": "s3"
     },
   ]
